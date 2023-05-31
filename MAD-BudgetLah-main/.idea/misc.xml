@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_intro.xml" value="0.33814589665653494" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.33814589665653494" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33814589665653494" />
+        <entry key="app/src/main/res/layout/budget_list_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_budget.xml" value="0.28514893020408744" />
+        <entry key="app/src/main/res/layout/fragment_create_budget.xml" value="0.27355072463768115" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.28514893020408744" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

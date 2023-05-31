@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BudgetLah</string>
+    <string name="title_activity_your_expenses">Your Expenses</string>
+    <string name="tab_text_1">Spendings</string>
+    <string name="tab_text_2">Rent &amp; Electricity</string>
+
+    <string name="tab_weekly">Weekly Report</string>
+    <string name="tab_monthly">Monthly Report</string>
+
+    <string name="tab_planned_income">Planned Income</string>
+    <string name="tab_income">Income</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_income_module">IncomeModule</string>
+    <string name="title_activity_reporting_module">ReportingModule</string>
+</resources>

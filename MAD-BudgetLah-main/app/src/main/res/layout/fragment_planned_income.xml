@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rent_and_electricity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlannedIncomeFragment" >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="This keeps track of your monthly planned income"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:textAlignment="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVIncome"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:cardBackgroundColor="#FF03DAC5"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="105dp"
+            >
+
+            <EditText
+                android:id="@+id/PlannedIncomeET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter your income"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Monthly Planned Income"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="30dp"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/BtnPlannedIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="156dp"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"/>
+
+
+</RelativeLayout>

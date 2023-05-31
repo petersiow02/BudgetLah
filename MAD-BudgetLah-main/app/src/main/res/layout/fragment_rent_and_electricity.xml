@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rent_and_electricity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RentAndElectricityFragment" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="This keeps track of your monthly expenses for rent &amp; electricity"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textAlignment="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVRent"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:cardBackgroundColor="#FF03DAC5"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="100dp"
+        app:cardCornerRadius="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="105dp"
+            >
+
+            <EditText
+                android:id="@+id/RentET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter your rent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Rent"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add your monthly rent here"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@id/rent"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVElectricity"
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:cardBackgroundColor="#FF03DAC5"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:id="@+id/RLElectricity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="105dp">
+
+            <EditText
+                android:id="@+id/ElectricityET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter your electricity"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/electricity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Electricity"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add this month's electricity bill here"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@id/electricity"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/BtnRentElectricity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="156dp"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpendingBillActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:theme="?actionBarTheme"
+        android:background="@color/teal_200">
+
+        <ImageButton
+            android:id="@+id/BackBtnSpendingBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_back"
+            android:contentDescription="Back button"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="-40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spending Bill"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/SaveBtnSpendingBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textSize="20sp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/teal_200"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:layout_marginRight="5dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/SpendingAmountEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:textColor="@color/teal_200"
+        android:layout_gravity="center"
+        android:hint="99.00"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="25sp"
+        android:paddingTop="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/Category_drop_down_spendingBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:hint="Select Category"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/SpendingDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spending Date"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showDatePickerDialog" />
+
+
+    <Button
+        android:id="@+id/DeleteSpendingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:textSize="25sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:onClick="deleteNote"/>
+
+</LinearLayout>
